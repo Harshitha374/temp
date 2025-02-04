@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <script>
+        function f1(){
+            let name1="hshinde655@gmail.com"
+            let pass="harsh"
+            let v=document.getElementById("username").value;
+            let k=document.getElementById("Password").value;
+            if (v==""& k=""){
+                msg.innerHTML="cant be blank"
+            } 
+            else if (v==name1 & k==pass){
+                msg.innerHTML="acess given"
+            }
+            else{
+                msg.innerHTML="Acess denied"
+
+            }
+
+        }
+    </script>
+    <style>
+        .container{
+            text-align: center;
+            display:flex;
+            justify-content: center;
+        }
+        .box{
+            border: 2px solid silver
+            padding:20px;
+            width:400px;
+            border radius:20px;
+        }
+        input{
+            padding:20px;
+            width:90%;
+        }
+        button{
+            background-color: blue;
+            width:100%
+            padding:20px;
+            border-radius:10px;
+            color: white;
+            font-size:xx-large;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p><div id="msg"></div></p>
+        <p><input type="text" id="username" placeholder="Email Adress or Phone number"></p>
+        <p><input type="password" id="Password" placeholder="Password"></p>
+        <button onclick="f1()">log in</button>
+    </div>
+
+    
+</body>
+</html>

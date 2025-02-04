@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function f1(){
+        let s1=document.getElementById("n1").value;
+        let s2=document.getElementById("n2").value;
+        let s3=document.getElementById("n3").value;
+        let s4=document.getElementById("n4").value;
+        //msg.innerHTML=`${no1} + ${no2}=${no1+no2}`
+        //m.innerHTML=`${no1} - ${no2}=${no1-no2}`
+        //n.innerHTML=`${no1} * ${no2} =${no1*no2}`
+        //d.innerHTML=`${no1} / ${no2} = ${no1/no2}`
+        //let str=`${no1}+${no2}=${no1+no2}<br>`;
+        //str=str+ `${no1}-${no2}=${no1-no2}<br>`;
+        //str=str+ `${no1}*${no2}=${no1*no2}<br>`;
+        //str=str+ `${no1}/${no2}=${no1/no2}<br>`;
+        //msg.innerHTML=str;
+        msg.innerHTML=s1 + '|' + s2 + '|' + s3 + '|' + s4;
+    }
+</script>
+<body>
+    <div>
+        <div id="msg"></div>
+        <p><input type="text" id="n1"></p>
+        <p><input type="text" id="n2"></p>
+        <p><input type="text" id="n3"></p>
+        <p><input type="text" id="n4"></p>
+        <button onclick="f1()">submit</button>
+    </div>
+
+</body>
+</html>
