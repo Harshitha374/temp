@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function f1(){
+        let q=document.getElementById("name").value;
+        let m=document.getElementById("username").value;
+        let n=document.getElementById("pass").value;
+        let o=document.getElementById("dob").value;
+        msg.innerHTML= `${q},${m},${n},${o}`
+       
+    }
+</script>
+<body>
+    <div>
+        <h1></h1>
+        <p><input type="input" id="name" placeholder="ENTER NAME"></p>
+        <p><input type="input" id="username" placeholder="ENTER EMAIL"></p>
+        <p><input type="input" id="pass" placeholder="PASSWORD"></p>
+        <p><input type="date" id="dob" placeholder="date of birth"></p>
+        <button onclick="f1()">Register</button>
+        <p><div id="msg"></div></p>
+
+    </div> 
+</body>
+</html>
